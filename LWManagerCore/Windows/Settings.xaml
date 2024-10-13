@@ -1,0 +1,75 @@
+﻿<Window x:Class="LWManagerCore.Windows.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LWManagerCore.Windows"
+        mc:Ignorable="d"
+        Title="Settings" Height="520" Width="320"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None">
+    <Grid>
+        <TabControl x:Name="settings">
+            <TabItem x:Name="companyTab">
+                <TabItem.Header>
+                    <TextBlock Margin="3">Компания</TextBlock>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel HorizontalAlignment="Center" Grid.Row="0">
+                        <Label Content="Основные данные" FontSize="20"/>
+                        <Button Name="companyLogoBtn" Click="companyLogoBtn_Click" IsDefault="True">
+                            <Image Name="companyLogoImg" Height="90"/>
+                        </Button>
+                        <Label Content="Имя компании:" FontSize="16"/>
+                        <TextBox Height="20" Margin="5,5,5,5" Name="companyNameTxtBox" />
+                        <Label Content="ФИО руководителя:" FontSize="16"/>
+                        <TextBox Height="20" Margin="5,5,5,5" Name="companyOwnerNameTxtBox" />
+                        <Label Content="Адрес компании:" FontSize="16"/>
+                        <TextBox Height="20" Margin="5,5,5,5" Name="companyAddressTxtBox" />
+                        <Label Content="Тел. номер:" FontSize="16"/>
+                        <TextBox Height="20" Margin="5,5,5,5" Name="companyPhoneTxtBox" />
+                        <Label Content="Номер карты:" FontSize="16"/>
+                        <TextBox Height="20" Margin="5,5,5,5" Name="companyCardTxtBox" />
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="systemTab">
+                <TabItem.Header>
+                    <TextBlock Margin="3">Система</TextBlock>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel HorizontalAlignment="Center" Grid.Row="2">
+                        <Label Content="Долговой лимит:" FontSize="16"/>
+                        <TextBox Height="20" Margin="5,0" Name="debtLimitTxtBox" PreviewTextInput="NumberValidationTextBox"/>
+                        <Label Content="Сменить пароль" FontSize="20"/>
+                        <Label Content="Текущий пароль:" FontSize="16"/>
+                        <TextBox Height="20" Margin="5,5,5,5" Name="currentPasswordTxtBox" />
+                        <Label Content="Новый пароль" FontSize="16"/>
+                        <TextBox Height="20" Margin="5,5,5,5" Name="newPasswordTxtBox" />
+                        <Label Content="Шаблон договора" FontSize="16"/>
+                        <TextBox Height="20" Margin="5,5,5,5" Name="agreementTemplateTxtBox" />
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+            <TabItem x:Name="databaseTab">
+                <TabItem.Header>
+                    <TextBlock Margin="3">База данных</TextBlock>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel HorizontalAlignment="Center" Grid.Row="1">
+                        <Label Content="База данных" FontSize="20"/>
+                        <Label Content="Экспорт и импорт:" FontSize="16"/>
+                        <Button Content="Экспорт в интернет" Width="128" Margin="3" IsDefault="True" Click="Button_Click_1"/>
+                        <Button Content="Экспорт" Width="64" Margin="3" Click="ExportBtn" IsDefault="True"/>
+                        <Button Content="Импорт" Width="64" Margin="3" Click="ImportBtn" IsDefault="True"/>
+                        <Button Content="Сброс данных" Width="128" Margin="3" Click="ResetDataBtn" IsDefault="True"/>
+                    </StackPanel>
+                </TabItem.Content>
+            </TabItem>
+        </TabControl>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="3">
+            <Button Content="Сохранить" Width="64" Margin="10" Click="Button_Click" IsDefault="True"/>
+            <Button Content="Отмена" Width="64" Margin="10" IsCancel="True"/>
+        </StackPanel>
+    </Grid>
+</Window>

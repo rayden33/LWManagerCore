@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LWManagerCore.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DebtLimit" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CompanyName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">company</Value>
+    </Setting>
+    <Setting Name="CompanyLogoImageName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">companyLogo.png</Value>
+    </Setting>
+    <Setting Name="DatabaseFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">LWMDatabase.db</Value>
+    </Setting>
+    <Setting Name="DatabaseArchiveFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">OldDB</Value>
+    </Setting>
+    <Setting Name="AgreementWordFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">agreementTemplate.docx</Value>
+    </Setting>
+    <Setting Name="CompanyOwnerName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Mavlyanov Azizxon Xusniddinovich</Value>
+    </Setting>
+    <Setting Name="AgreementArchiveFolderName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">agreementsArchive</Value>
+    </Setting>
+    <Setting Name="MysqlBackupUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">server3.ahost.uz</Value>
+    </Setting>
+    <Setting Name="MysqlDatabaseName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">lwmanage_backup</Value>
+    </Setting>
+    <Setting Name="MysqlUsername" Type="System.String" Scope="User">
+      <Value Profile="(Default)">lwmanage</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">123</Value>
+    </Setting>
+    <Setting Name="MysqlPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">lwapp</Value>
+    </Setting>
+    <Setting Name="CompanyAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CompanyPhone" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CompanyCard" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>
