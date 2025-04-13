@@ -156,7 +156,7 @@ namespace LWManagerCore.Windows
 
             int maxTopClientsCount = 10;
             clientsOrder.Sort();
-            for (int i = clientsOrder.Count - maxTopClientsCount; i <= clientsOrder.Count - 1; i++)
+            for (int i = Math.Max(clientsOrder.Count - maxTopClientsCount, 0); i <= clientsOrder.Count - 1; i++)
             {
                 clientNames.Add(clientsOrder[i].ClientFullName);
                 clientOrderCounts.Add(clientsOrder[i].OrderCount);

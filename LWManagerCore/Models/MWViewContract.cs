@@ -26,5 +26,6 @@ namespace LWManagerCore.Models
         /// Order Status 0 = new order, 1 = returned order, 2 = closed order
         /// </summary>
         public int OrderStatus { get; set; }
+        public string? Note { get; set; }
     }
 }

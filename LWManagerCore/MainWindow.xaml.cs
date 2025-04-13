@@ -77,6 +77,7 @@ namespace LWManagerCore
 
                 tempDateTime = UnixTimeStampToDateTime(contract.Create_datetime);
                 tempViewContract.CreationDateTime = tempDateTime.ToShortDateString();
+                tempViewContract.Note = contract.Note;
 
                 if (contract.Return_datetime == 0)
                     tempTimeSpan = DateTime.Now - tempDateTime;
@@ -261,6 +262,7 @@ namespace LWManagerCore
                     returnedLeaseContract.Create_datetime = leaseContract.Create_datetime;
                     returnedLeaseContract.Return_datetime = returnOrder.ReturnTimeSpan;
                     returnedLeaseContract.Close_datetime = leaseContract.Close_datetime;
+                    returnedLeaseContract.Note = leaseContract.Note;
                     dataBaseAC.ReturnedLeaseContracts.Add(returnedLeaseContract);
                 }
                 else
@@ -277,6 +279,7 @@ namespace LWManagerCore
                     archiveLeaseContract.Create_datetime = leaseContract.Create_datetime;
                     archiveLeaseContract.Return_datetime = returnOrder.ReturnTimeSpan;
                     archiveLeaseContract.Close_datetime = returnOrder.ReturnTimeSpan;
+                    archiveLeaseContract.Note = leaseContract.Note;
                     dataBaseAC.ArchiveLeaseContracts.Add(archiveLeaseContract);
                 }
 

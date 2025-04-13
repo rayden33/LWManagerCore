@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LWManagerCore.Windows"
         mc:Ignorable="d"
-        Title="EditLeaseContract" Height="240" Width="580"
+        Title="EditLeaseContract" Height="280" Width="580"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None">
     <Grid Background="Azure">
@@ -38,6 +38,10 @@
                     <Label Content="Итог:" FontSize="25"/>
                     <Label Name="totalAmountLbl"  Content="0" FontSize="25"/>
                 </StackPanel>-->
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Заметки:" FontSize="15" Margin="5"/>
+                    <TextBox Name="noteTxtBox" Margin="5" Height="90" Width="390" TextWrapping="Wrap"/>
+                </StackPanel>
             </StackPanel>
 
         </Grid>

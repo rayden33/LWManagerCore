@@ -22,6 +22,7 @@ namespace LWManagerCore.Models
         private int create_datetime;
         private int return_datetime;
         private int close_datetime;
+        private string? note;
 
         public int Id { get; set; }
 
@@ -132,6 +133,16 @@ namespace LWManagerCore.Models
             {
                 close_datetime = value;
                 OnPropertyChanged("close_datetime");
+            }
+        }
+
+        public string? Note
+        {
+            get { return note; }
+            set
+            {
+                note = value;
+                OnPropertyChanged("note");
             }
         }
 

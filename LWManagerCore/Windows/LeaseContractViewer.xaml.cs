@@ -124,6 +124,7 @@ namespace LWManagerCore.Windows
             clientPhoneNumber2Lbl.Content = client.Phone_number2;
             clientAddressLbl.Content = client.Address;
             orderDaysLbl.Content = selectedContract.UsedDays;
+            noteTxtBlock.Text = selectedContract.Note;
 
             orderProducts = dataBaseAC.OrderProducts.Where(op => op.Order_id == selectedContract.OrderId).ToList();
             foreach(OrderProduct op in orderProducts)

@@ -46,6 +46,7 @@ namespace LWManagerCore.Models
                 entity.Property(e => e.Create_datetime).IsRequired();
                 entity.Property(e => e.Return_datetime).IsRequired();
                 entity.Property(e => e.Close_datetime).IsRequired();
+                entity.Property(e => e.Note);
             });
 
             modelBuilder.Entity<ArchiveLeaseContract>(entity =>
@@ -62,6 +63,7 @@ namespace LWManagerCore.Models
                 entity.Property(e => e.Create_datetime).IsRequired();
                 entity.Property(e => e.Return_datetime).IsRequired();
                 entity.Property(e => e.Close_datetime).IsRequired();
+                entity.Property(e => e.Note);
             });
 
             modelBuilder.Entity<ReturnedLeaseContract>(entity =>
@@ -78,6 +80,7 @@ namespace LWManagerCore.Models
                 entity.Property(e => e.Create_datetime).IsRequired();
                 entity.Property(e => e.Return_datetime).IsRequired();
                 entity.Property(e => e.Close_datetime).IsRequired();
+                entity.Property(e => e.Note);
             });
 
             modelBuilder.Entity<Client>(entity =>

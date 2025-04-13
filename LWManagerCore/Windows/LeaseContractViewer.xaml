@@ -93,7 +93,7 @@
                     <Label Content="Дата возврата: " FontSize="15" Margin="45,5,5,5"/>
                     <Label Name="returnDateTimeLbl" Content="**/**/****" FontSize="15" VerticalAlignment="Center"/>
                 </StackPanel>
-                <ListBox Name="paymentListBox" Margin="10" MaxHeight="180">
+                <ListBox Name="paymentListBox" Margin="10" MaxHeight="100">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
@@ -104,7 +104,8 @@
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
-                    <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock x:Name="noteTxtBlock" Height="60" Margin="10,0,10,0" Background="White"/>
+                <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                     <Label Content="Итог:" FontSize="25"/>
                     <Label Name="totalAmountLbl"  Content="0" FontSize="25"/>
                 </StackPanel>-->
