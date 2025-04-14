@@ -63,7 +63,7 @@ namespace LWManagerCore.Windows
             deliveryAmountTxtBox.Text = ReturnedLeaseContract.Delivery_amount.ToString();
             deliveryAddressTxtBox.Text = ReturnedLeaseContract.Delivery_address.ToString();
             createDatePicker.SelectedDate = new DateTime(1970, 1, 1).AddSeconds(ReturnedLeaseContract.Create_datetime);
-            noteTxtBox.Text = ReturnedLeaseContract.Note.ToString();
+            noteTxtBox.Text = ReturnedLeaseContract.Note?.ToString();
 
 
             //Height = SystemParameters.PrimaryScreenHeight / 1.5;
@@ -89,6 +89,7 @@ namespace LWManagerCore.Windows
                 ReturnedLeaseContract.Delivery_amount = Convert.ToInt32(deliveryAmountTxtBox.Text);
                 ReturnedLeaseContract.Create_datetime = (Int32)(createDatePicker.SelectedDate.Value.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
                 ReturnedLeaseContract.Used_days = (usedDayChBox.IsChecked == true ? 0 : 1);
+                ReturnedLeaseContract.Note = noteTxtBox.Text;
                 DialogResult = true;
             }
             

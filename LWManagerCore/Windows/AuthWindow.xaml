@@ -26,6 +26,6 @@
         </StackPanel>
 
         <Button Content="Войти" Margin="20" Grid.Row="2" Width="120" Click="Button_Click"/>
-        <Label Content="0.9.250218 ver." Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <Label Name="versionLbl" Content="version" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
     </Grid>
 </Window>

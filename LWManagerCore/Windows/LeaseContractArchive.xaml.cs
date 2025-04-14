@@ -54,6 +54,7 @@ namespace LWManagerCore.Windows
 
                 tempDateTime = MainUtils.UnixTimeStampToDateTime(contract.Create_datetime);
                 tempViewContract.CreationDateTime = tempDateTime.ToShortDateString();
+                tempViewContract.Note = contract.Note;
 
                 if (contract.Return_datetime == 0)
                     tempTimeSpan = DateTime.Now - tempDateTime;

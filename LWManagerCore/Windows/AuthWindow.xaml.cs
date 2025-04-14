@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -24,6 +25,8 @@ namespace LWManagerCore.Windows
         {
             InitializeComponent();
             pwdPassBox.Focus();
+            var currentVersion = Assembly.GetExecutingAssembly().GetName().Version?.ToString();
+            versionLbl.Content = currentVersion + " ver.";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

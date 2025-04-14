@@ -210,5 +210,12 @@ namespace LWManagerCore.Windows
                 ResetDatabase();
             }
         }
+
+        private void UpdateBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Updater updater = new Updater();
+
+            updater.ShowDialog();
+        }
     }
 }

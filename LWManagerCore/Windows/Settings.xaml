@@ -48,6 +48,7 @@
                         <TextBox Height="20" Margin="5,5,5,5" Name="newPasswordTxtBox" />
                         <Label Content="Шаблон договора" FontSize="16"/>
                         <TextBox Height="20" Margin="5,5,5,5" Name="agreementTemplateTxtBox" />
+                        <Button Name="UpdateBtn" Content="Обновить" Margin="5,30,5,5" Click="UpdateBtn_Click" />
                     </StackPanel>
                 </TabItem.Content>
             </TabItem>
